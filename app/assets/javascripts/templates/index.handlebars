@@ -1,13 +1,8 @@
-<div class="admin_tasks span-12">
+<h2>Listing Tasks</h2>
+<div class="">
 	{{#each task in controller}}
-	<div class="task">
-		<div class="header">{{task.name}}</div>
-		<div class="length">{{task.length}}</div>
-		<div class="breakStartTime">{{task.breakStartTime}}</div>
-		<div class="breakLength">{{task.breakLength}}</div>
-	</div>
+		<div class="task">
+			<div>{{task.id}}</div>
+		</div>
 	{{/each}}
-</div>
-<div class="detail_view span-12">
-	<h2>Details</h2>
 </div>

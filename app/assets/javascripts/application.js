@@ -12,22 +12,13 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require foundation
 //= require jquery-ui
 //= require handlebars
 //= require ember
 //= require ember-data
 //= require_self
-//= require handlebars
-//= require ember
-//= require ember-data
-//= require_self
 //= require standup_timer
-StandupTimer = Ember.Application.create();
 //= require_tree .
 
 StandupTimer = Ember.Application.create();
-
-StandupTimer.Store = DS.Store.extend({
-	revision: 11,
-	adapter: DS.RESTAdapter.create()
-});

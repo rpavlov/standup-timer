@@ -1,6 +1,6 @@
 StandupTimer::Application.routes.draw do
-
   root :to => 'timer#index'
+    match "/*path" => "timer#index"
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
